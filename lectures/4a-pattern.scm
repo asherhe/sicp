@@ -5,9 +5,9 @@
 ; Pattern rules
 ; foo - matches the expression "foo"
 ; (f a b c) - matches a list containing "f," then "a," then "b," and finally "c"
-; (? a) - matches any expression, and call it "a"
-; (?c a) - matches a constant, call it "c"
-; (?v x) - matches a variable, call it "x"
+; (? a) - matches an arbitrary expression, and call it "a"
+; (?c a) - matches a arbitrary constant, call it "a"
+; (?v a) - matches a arbitrary variable, call it "a"
 
 ; Skeleton rules
 ; (: [expression]) - evaluates expression
@@ -27,12 +27,7 @@
         (* (dd (: a) (: v)) (:b))))
   ))
 
-; Program structure:
-; The patterns fed into the program one by one.
-; For each pattern, we match it agains the expression. If successful, we should get a dictionary of variables back.
-; Afterwards, we substitute it into the skeleton, repeating the matching process for any clauses that require evalutation.
-
-; Tries to match an expression against a pattern and add pattern variables to dictionary if successful - return the dictionary
+; Recursively matches an expression against a pattern, emitting matched values to a dictionary
 (define (match pat exp dict)
   (cond
     ((eq? dict 'failed) 'failed)
@@ -43,7 +38,14 @@
         ((eq? pat exp) dict)
         (else 'failed))
        (match pat (cdr exp) dict)))
-    ((atom? exp)
+    ((arbitrary-constant? pat))
+    ((arbitrary-expression? pat))
+     (cons (cons (cadr pat) exp) dict))
+    ((atom? exp) ; we have already confirmed that pat is not atomic
      'failed)
-    (else
-      (match (cdr pat) (cdr exp) (match (car pat) (car exp) dict)))))
+    (else ; traverse the structure of the expression
+      (match (cdr pat)
+             (cdr exp)
+             (match (car pat)
+                    (car exp)
+                    dict)))))
