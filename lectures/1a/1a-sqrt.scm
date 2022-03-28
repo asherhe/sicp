@@ -5,17 +5,19 @@
 ; (from slide)
 
 ; My implementation
-(define accuracy 0.01)
+(define accuracy 0.001)
 
 (define (square x) (* x x))
 (define (avg a b) (/ (+ a b) 2))
 
 (define (sqrt x)
-  (define (good-enough? x approx)
-    (< (abs (- x (square approx)))
-       accuracy))
-  (define (try-guess x guess)
-    (if (good-enough? x sguess)
+  (define (try-guess guess)
+    (if (good-enough? guess)
       guess
-      (try-guess x (avg guess (/ x guess)))))
-  (try-guess x (/ x 2))) ; probably a good enough guess
+      (try-guess (improve guess))))
+  (define (good-enough? guess)
+    (< (abs (- x (square guess)))
+       accuracy))
+  (define (improve guess)
+    (avg guess (/ x guess)))
+  (try-guess (/ x 2.0))) ; x / 2 is probably a good enough starting point
