@@ -18,7 +18,7 @@
 > 
 > *(p. 27)*
 
-Let's just simulate the evalutation of this program first.
+Let's just simulate the evaluation of this program first.
 
 So if we use applicative-order evaluation:
 
@@ -42,4 +42,4 @@ Let us instead try it with normal-order evaluation
 => 0
 ```
 
-So if we are using normal-order evaluation on `(test 0 (p))` we end up with zero since the interpreter doesn't evern bother at all with evaluating `(p)`, thus saving it from an infinite loop.
+So if we are using normal-order evaluation on `(test 0 (p))` we end up with zero since the interpreter doesn't even bother at all with evaluating `(p)`, thus saving it from an infinite loop.

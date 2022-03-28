@@ -1,15 +1,11 @@
 # Exercise 1.2
 
 > Translate the following expression into prefix form:
-> 
-> ```
-> 5 + 4 + (2 - (3 - (6 + 4/5)))
-> ---------------------------
->       3(6 - 2)(2 - 7)
-> ```
-> 
-> (I tried to do my best to recreate the fractions but that didn't work well)
-> 
+>
+> $$
+> \frac{5+4+\left(2-\left(3-\left(6+\frac45\right)\right)\right)}{3(6-2)(2-7)}
+> $$
+>
 > *(p. 27)*
 
 (with indentation so it's easier on the eyes)
