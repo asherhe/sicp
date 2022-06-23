@@ -1,8 +1,6 @@
 # Exercise 1.1
 
-> Below is a sequence of expressions. What is the result printed by the
-> interpreter in response to each expression? Assume that the sequence is to be
-> evaluated in the order in which it is presented.
+> Below is a sequence of expressions. What is the result printed by the interpreter in response to each expression? Assume that the sequence is to be evaluated in the order in which it is presented.
 > 
 > *(p. 26)*
 
@@ -10,7 +8,7 @@ Believe it or not, I did all of this by hand.
 
 If you don't believe me that's fine but that's actually what happened as far as I can tell.
 
-Also I'm not going to be very picky about whether I should use normal-order evaluation or applicative-order evaluation.
+Also I'm not going to be very picky about whether I should use [[Evaluation Order|normal-order evaluation or applicative-order evaluation]]. I just went by instinct and i'm pretty sure that this is applicative-order.
 
 And in addition my formatting is inconsistent and do not conform to any set rules because I made the rules as I went along so maybe I'll have to improve the formatting at some point in the future.
 

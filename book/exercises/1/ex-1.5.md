@@ -18,7 +18,7 @@
 >
 > *(p. 27)*
 
-Let's just simulate the evalutation of this program first.
+Let's just simulate the evaluation of this program first.
 
 So if we use applicative-order evaluation:
 

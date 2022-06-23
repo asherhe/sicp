@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "9d0c882513bd75aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2d22c74be2d910a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/Case Study - Tower of Hanoi.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c9b345b533b3c384",
+    "type": "split",
+    "children": [
+      {
+        "id": "f63a37e51c710740",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07b76654f9945687",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1700fe31cfdf5abc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "402fbbf9584a332d",
+    "type": "split",
+    "children": [
+      {
+        "id": "25e29abfbca3bb1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "527bf81f01f0fad9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/Case Study - Tower of Hanoi.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e2d22c74be2d910a",
+  "lastOpenFiles": [
+    "notes/Case Study - Tower of Hanoi.md",
+    "notes/Procedures and the Processes they Generate.md",
+    "notes/Course Overview.md",
+    "notes/Evaluation Order.md",
+    "book/exercises/1/ex-1.1.md",
+    "notes/Lisp.md",
+    "book/exercises/1/ex-1.9.md",
+    "book/exercises/1/ex-1.10.md",
+    "book/exercises/1/ex-1.5.md",
+    "book/exercises/1/ex-1.6.md"
+  ]
+}
