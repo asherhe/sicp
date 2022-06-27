@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:51:02 pm
+---
 # Exercise 1.2
+
+#evaluation #evaluation
 
 > Translate the following expression into prefix form:
 >
@@ -7,7 +13,7 @@
 > $$
 >
 > (This requires that either your markdown viewer supports TeX or that you have the magical ability to read TeX)
-> 
+>
 > *(p. 27)*
 
 (with indentation so it's easier on the eyes)

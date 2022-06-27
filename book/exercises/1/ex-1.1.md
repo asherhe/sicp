@@ -1,7 +1,13 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:50:54 pm
+---
 # Exercise 1.1
 
+#exercise #evaluation
+
 > Below is a sequence of expressions. What is the result printed by the interpreter in response to each expression? Assume that the sequence is to be evaluated in the order in which it is presented.
-> 
+>
 > *(p. 26)*
 
 Believe it or not, I did all of this by hand.

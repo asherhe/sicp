@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "e2d22c74be2d910a",
+        "id": "d2c58a5f3c70b1fa",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Case Study - Tower of Hanoi.md",
+            "file": "notes/Case Study - Counting Change.md",
             "mode": "source",
-            "source": true
+            "source": false
           }
         }
       }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 225.5
   },
   "right": {
     "id": "402fbbf9584a332d",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Case Study - Tower of Hanoi.md",
+                "file": "notes/Case Study - Counting Change.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e2d22c74be2d910a",
+  "active": "d2c58a5f3c70b1fa",
   "lastOpenFiles": [
-    "notes/Case Study - Tower of Hanoi.md",
-    "notes/Procedures and the Processes they Generate.md",
-    "notes/Course Overview.md",
-    "notes/Evaluation Order.md",
+    "notes/Case Study - Counting Change.md",
+    "notes/Recursion and Iteration.md",
     "book/exercises/1/ex-1.1.md",
-    "notes/Lisp.md",
-    "book/exercises/1/ex-1.9.md",
-    "book/exercises/1/ex-1.10.md",
+    "book/exercises/1/ex-1.2.md",
+    "book/exercises/1/ex-1.4.md",
     "book/exercises/1/ex-1.5.md",
-    "book/exercises/1/ex-1.6.md"
+    "book/exercises/1/ex-1.6.md",
+    "book/exercises/1/ex-1.9.md",
+    "book/exercises/list-of-exercises.md",
+    "book/exercises/1/ex-1.10.md"
   ]
 }

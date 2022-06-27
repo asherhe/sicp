@@ -1,3 +1,7 @@
+---
+date created: 2022/05/05 9:10:34 pm
+date modified: 2022/06/21 7:34:32 pm
+---
 # Lisp
 
 > [!quote] Quote from the lecture
@@ -37,6 +41,7 @@ These are a very important measure of the applicability of a language
 	- `and`, `or`, `not`
 		- Operations for logical composition
 		- Allow for more complex compound predicates
+
 ### Means of Combination
 
 - Example of a combination:
@@ -51,6 +56,7 @@ These are a very important measure of the applicability of a language
 ### Means of Abstraction
 
 `define`: assigns data to symbols
+
 ```scheme
 (define a (* 5 5))
 (* a a) -> 625
@@ -58,18 +64,20 @@ These are a very important measure of the applicability of a language
 ```
 
 Procedures, being data, can also be assigned to symbols (in a slightly different manner)
+
 ```scheme
 (define (square x) (* x x))
 (square 10) -> 100
 ```
 
 `lambda` can also be used to denote a procedure
+
 ```scheme
 (define square (lambda (x) (* x x)))
 ```
 
-|                      | Procedures                     | Data         |
+| | Procedures | Data |
 | -------------------- | ------------------------------ | ------------ |
-| Primitive Elements   | `+` `*` `<` `=`                | `23` `1.738` |
-| Means of Combination | `()` composition, `cond`, `if` |              |
-| Means of Abstraction | `define`                       |              |
+| Primitive Elements | `+` `*` `<` `=` | `23` `1.738` |
+| Means of Combination | `()` composition, `cond`, `if` | |
+| Means of Abstraction | `define` |              |

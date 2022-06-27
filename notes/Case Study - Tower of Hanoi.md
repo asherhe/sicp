@@ -1,7 +1,13 @@
+---
+date created: 2022/06/21 9:18:38 pm
+date modified: 2022/06/24 10:02:45 pm
+---
 # Case Study: Tower of Hanoi
-#lecture
+
+#lecture #case-study
 
 **Python program (no auto solve thing):**
+
 ![](hanoi.py)
 
 Basically the whole algorithm is:
@@ -15,6 +21,6 @@ to move a block of disks:
 
 Hint: The function definition is `(move n from to spare)`, where `n` is the number of blocks to move.
 
-This is a recursive algorithm
+This is a recursive algorithm, particular one that employs [[Recursion and Iteration#Tree Recursion|tree recursion]], which is quite inefficient.
 
 **Challenge: Write an iterative version**

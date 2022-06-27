@@ -1,6 +1,14 @@
-# Procedures and the Processes they Generate
+---
+date created: 2022/05/20 10:26:27 pm
+date modified: 2022/06/24 10:03:25 pm
+---
+# Recursion and iteration
+
+#evaluation
 
 ## Linear Recursive Processes
+
+#recursion
 
 Take for example the factorial function
 
@@ -11,7 +19,7 @@ Take for example the factorial function
 	      (* (n (factorial (- n 1))))))
 ```
 
-Its evaluation looks like this:
+Its [[Evaluation Order|evaluation]] looks like this:
 
 ```scheme
 (factorial 6)
@@ -35,6 +43,8 @@ Basically what this means is that each function call will lead to another until 
 In addition, the steps required to execute a linear recursive process is always proportional to its input, hence the name *linear*.
 
 ## Linear Iterative Processes
+
+#iteration
 
 Let's look at this modified version of `factorial`:
 
@@ -73,3 +83,65 @@ Iterative processes repeat a certain computation again and again until some cond
 One property of iterative processes is that, since their computational state is stored in its parameters, representing a step in the computation is a matter of remembering a few values. In contrast, recursive processes have the bulk of its calculations uncalculated until its base case is met, making the representation of calculation state cumbersome.
 
 In many other languages such as C or Java, recursive processes tend to consume memory. This makes iterative processes impractical as the more iterations there are, the more memory it consumes. In Lisp, however, there is no such problem, and iterative processes can be executed without any additional memory. This is a property known as *tail recursion*.
+
+## Tree Recursion
+
+**Example: Fibonacci Numbers**
+
+![](fib.scm)
+
+Fibonacci numbers are defined by the rule
+
+$$
+\text{Fib}(n)=
+\begin{cases}
+0&\text{if }n=0,\\
+1&\text{if }n=1,\\
+\text{Fib}(n-1)+\text{Fib}(n-2)&\text{otherwise.}
+\end{cases}
+$$
+
+Transliterating this word-for-word looks like this:
+
+```scheme
+(define (fib n)
+  (cond ((= n 0) 0)
+        ((= n 1) 1
+        (else (+ (fib (- n 1))
+                 (fib (- n 2))))))
+```
+
+If we run `(fib 5)` the execution looks like:
+
+![[fig-1.5.png]]
+
+This is highly inefficient and it happens that the complexity increases exponentially as `n`
+
+### Replacing this with iteration
+
+![](fib-iter.scm)
+
+As with `factorial`, we are going to need a few state variables and a process to apply on them to make this iterative.
+
+So `fib` involves two values: $Fib(n-1)$ and $Fib(n-2)$. Let's call them `a` and `b`
+
+On each new iteration $Fib(n-1)$ becomes $Fib(n-2)$ and $Fib(n-2)$ has become $Fib(n-3)$ so we have to change things up.
+
+Since `a` is the new `b` we can just set `b` to `a`
+
+$Fib(n-2)+Fib(n-3)=Fib(n-1)$ so the new `a` is `(+ a b)`.
+
+And to top things off we need a `count` to keep track of where we are.
+
+The whole program looks like so:
+
+```
+(define (fib n)
+  (define (fib-iter a b count)
+    (if (= count 0)
+      b
+      (fib-iter (+ a b) a (- count 1))))
+  (fib-iter 1 0 n))
+```
+
+This is now a linear iteration!

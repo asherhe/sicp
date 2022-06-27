@@ -1,9 +1,12 @@
 {
   "legacyEditor": false,
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false,
   "showLineNumber": false,
   "spellcheck": true,
   "autoPairMarkdown": false,
-  "tabSize": 2
+  "tabSize": 2,
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "notes/attachments"
 }

@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:51:41 pm
+---
 # Exercise 1.5
+
+#exercise #evaluation
 
 > Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order evaluation or normal-order evaluation. He defines the following two procedures:
 >

@@ -10,5 +10,6 @@
   "primary-ceciliamay@@statusbar": "show__status-bar",
   "primary-ceciliamay@@no-link-underline": true,
   "primary-ceciliamay@@no-multicolor-highlight": false,
-  "primary-ceciliamay@@font-monospace-theme": "\"JetBrains Mono\", \"Cascadia Code\", Inconsolata, Courier, monospace"
+  "primary-ceciliamay@@font-monospace-theme": "\"JetBrains Mono\", \"Cascadia Code\", Inconsolata, Courier, monospace",
+  "sanctum@@dark-mode-palette": "sanctum-chocolate"
 }

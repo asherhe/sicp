@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:52:08 pm
+---
 # Exercise 1.6
+
+#exercise
 
 > Alyssa P. Hacker doesn't see why `if` needs to be provided in a speical form. "Why can't I just define it as an ordinary procedure in terms of `cond`?" she asks. Alyssa's friend Eva Lu Ator claims that this can indeed be done, and she defines a new version of `if`:
 >

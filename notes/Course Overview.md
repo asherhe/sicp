@@ -1,8 +1,13 @@
+---
+date created: 2022/05/05 9:02:27 pm
+date modified: 2022/06/21 7:32:27 pm
+---
 # Course Overview
 
 **Lisp is all about controlling complexity**
 
 Complexity in Lisp can be controlled in three ways
+
 - Black-box abstraction
 - Conventional interfaces
 - Metalinguistic abstraction

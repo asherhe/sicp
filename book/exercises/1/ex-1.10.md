@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:52:44 pm
+---
 # Exercise 1.10
+
+#exercise #evaluation #recursion
 
 > The following procedure computes a mathematical function called Ackermann's function.
 >

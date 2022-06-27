@@ -1,4 +1,10 @@
+---
+date created: 2022/05/10 10:01:04 pm
+date modified: 2022/06/24 10:02:54 pm
+---
 # Evaluation Order
+
+#evaluation
 
 - Expressions in Lisp can be evaluated in two ways
 	- Both are nearly identical but not really
