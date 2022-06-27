@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:52:36 pm
+---
 # Exercise 1.9
+
+#exercise #recursion
 
 > Each of the following two procedures defines a method for adding two positive integers in terms of the procedures `inc`, which increments its argument by 1, and `dec`, which decrements its argument by 1.
 >

@@ -1,4 +1,10 @@
+---
+date created: 2022/04/25 9:10:37 pm
+date modified: 2022/06/24 9:52:44 pm
+---
 # Exercise 1.10
+
+#exercise #evaluation #recursion
 
 > The following procedure computes a mathematical function called Ackermann's function.
 >
@@ -31,7 +37,7 @@
 >
 > *(p. 47)*
 
-First of all,
+First of all (using [[Evaluation Order|applicative-order evaluation]] though funnily it somehow looks like a weird normal-order evaluation),
 
 ```scheme
 (A 1 10)
@@ -80,9 +86,11 @@ Onto the next one.
 (A 2 (A 2 2))
 ```
 
-Hold up. `(A 2 2)` is bad. *Really bad*.
+Based on that expansion of `(A 2 4)`, `(A 2 (A 2 2))` looks like bad news.
 
-Let's look back at our expansion of `(A 2 4)` too see if there's a shortcut for this. It turns out that `(A 2 x)` is repeated exponentiation, which is slightly less than fun (I tried computing `(A 2 5)` and the result was 19729 digits long which was bad).
+Let's look back at our expansion of `(A 2 4)` too see if there's a shortcut for this.
+
+It turns out that `(A 2 x)` is repeated exponentiation, which is slightly less than fun (I tried computing `(A 2 5)` and the result was 19729 digits long which was bad).
 
 Back to the computation
 
@@ -102,4 +110,4 @@ So in the process of evaluating Ackermann's function we also accidentally answer
 
 So `(f n)` is the same as multiplication, `(g n)` is the same as exponentiation, and `(h n)` is the same as tetration.
 
-[I feel the need to insert Q.E.D. for some reason but I have refrained from doing so]
+In short Ackermann's function is a recursive definition of higher level analogues of addition and multiplication.
