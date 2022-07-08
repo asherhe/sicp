@@ -1,6 +1,15 @@
 [
+  "obsidian-linter",
+  "quick-latex",
   "obsidian-style-settings",
   "obsidian-outliner",
+  "folder-note-plugin",
+  "templater-obsidian",
+  "zoottelkeeper-obsidian-plugin",
+  "obsidian-frontmatter-tag-suggest",
+  "obsidian-footnotes",
   "table-editor-obsidian",
-  "obsidian-linter"
+  "tag-wrangler",
+  "obsidian-contextual-typography",
+  "cm-editor-syntax-highlight-obsidian"
 ]

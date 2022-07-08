@@ -1,12 +1,15 @@
 ---
 date created: 2022/05/20 10:26:27 pm
-date modified: 2022/06/24 10:03:25 pm
+date modified: 2022/06/26 9:27:59 pm
 ---
+
 # Recursion and iteration
 
 #evaluation
 
 ## Linear Recursive Processes
+
+^601158
 
 #recursion
 
@@ -86,6 +89,9 @@ In many other languages such as C or Java, recursive processes tend to consume m
 
 ## Tree Recursion
 
+$$
+\newcommand{\Fib}{\mathrm{Fib}}
+$$
 **Example: Fibonacci Numbers**
 
 ![](fib.scm)
@@ -93,11 +99,11 @@ In many other languages such as C or Java, recursive processes tend to consume m
 Fibonacci numbers are defined by the rule
 
 $$
-\text{Fib}(n)=
+\Fib(n)=
 \begin{cases}
 0&\text{if }n=0,\\
 1&\text{if }n=1,\\
-\text{Fib}(n-1)+\text{Fib}(n-2)&\text{otherwise.}
+\Fib(n-1)+\Fib(n-2)&\text{otherwise.}
 \end{cases}
 $$
 
@@ -123,13 +129,13 @@ This is highly inefficient and it happens that the complexity increases exponent
 
 As with `factorial`, we are going to need a few state variables and a process to apply on them to make this iterative.
 
-So `fib` involves two values: $Fib(n-1)$ and $Fib(n-2)$. Let's call them `a` and `b`
+So `fib` involves two values: $\Fib(n-1)$ and $\Fib(n-2)$. Let's call them `a` and `b`
 
-On each new iteration $Fib(n-1)$ becomes $Fib(n-2)$ and $Fib(n-2)$ has become $Fib(n-3)$ so we have to change things up.
+On each new iteration $\Fib(n-1)$ becomes $\Fib(n-2)$ and $\Fib(n-2)$ has become $Fib(n-3)$ so we have to change things up.
 
 Since `a` is the new `b` we can just set `b` to `a`
 
-$Fib(n-2)+Fib(n-3)=Fib(n-1)$ so the new `a` is `(+ a b)`.
+$\Fib(n-2)+\Fib(n-3)=\Fib(n-1)$ so the new `a` is `(+ a b)`.
 
 And to top things off we need a `count` to keep track of where we are.
 
