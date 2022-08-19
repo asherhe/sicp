@@ -1,7 +1,9 @@
 ---
+tags: 
 date created: 2022/05/10 10:01:04 pm
-date modified: 2022/06/24 10:02:54 pm
+date modified: 2022/06/26 8:06:11 pm
 ---
+
 # Evaluation Order
 
 #evaluation
@@ -9,7 +11,7 @@ date modified: 2022/06/24 10:02:54 pm
 - Expressions in Lisp can be evaluated in two ways
 	- Both are nearly identical but not really
 - Applicative-order evaluation
-	- Recursive process starting from the base combination
+	- Recursive process starting from the original combination
 	- Evaluate the operands of the combination
 	- Apply the procedure with the evaluated operands
 		- If the procedure is a primitive procedure evaluate it directly
@@ -19,3 +21,6 @@ date modified: 2022/06/24 10:02:54 pm
 - Normal-order evaluation
 	- Recursively substitute symbols until the combination consists entirely of primitives
 	- Reduce the combination by evaluating the resulting combination
+	- Slow and takes up a lot of resources
+	- Additional rule for `if`
+		- Evaluate predicate, and select either result
