@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "2900b5cdc4d11cb2",
+    "id": "31ddb266602b5178",
     "type": "split",
     "children": [
       {
-        "id": "69936a09a2343fba",
+        "id": "8cacd167bda5420b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "book/exercises/ex-1.16.md",
+            "file": "book/exercises/ex-1.26.md",
             "mode": "source",
             "source": false
           }
@@ -19,15 +19,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "da537c47fbc8d6d4",
+    "id": "4db3fdf25583484f",
     "type": "split",
     "children": [
       {
-        "id": "1faed3eed4e0ffd4",
+        "id": "3b567e88e77cfe3e",
         "type": "tabs",
         "children": [
           {
-            "id": "20ab1ecbcfadda38",
+            "id": "49e101adbbacdea6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "b94946a472b9934b",
+            "id": "fd310a35b2014ba7",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#integrals",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -50,7 +50,7 @@
             }
           },
           {
-            "id": "361248a8baf0dc93",
+            "id": "f1b243c5c1a3d1d0",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -61,23 +61,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 197
+    "width": 300
   },
   "right": {
-    "id": "fb2292456862e189",
+    "id": "34d88fc09960db9c",
     "type": "split",
     "children": [
       {
-        "id": "5770f202478ae19a",
+        "id": "7efa4f746f1b2e78",
         "type": "tabs",
         "children": [
           {
-            "id": "6abe3f7f2b9b7534",
+            "id": "0466128ac09c4a8e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/exercises/ex-1.16.md",
+                "file": "book/exercises/ex-1.26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
             }
           },
           {
-            "id": "785ac3c4088e777e",
+            "id": "88ceafb069bc196a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -100,42 +100,30 @@
             }
           },
           {
-            "id": "ecc0cb9779e96275",
+            "id": "c9e92daaf12c91f1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "book/exercises/ex-1.16.md"
+                "file": "book/exercises/ex-1.26.md"
               }
             }
-          },
-          {
-            "id": "8cc8884fcebbe904",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "69936a09a2343fba",
+  "active": "8cacd167bda5420b",
   "lastOpenFiles": [
+    "book/exercises/ex-1.25.md",
+    "book/exercises/ex-1.20.md",
     "book/exercises/ex-1.16.md",
-    "book/exercises/ex-1.14.md",
-    "book/exercises/ex-1.15.md",
-    "notes/Exponentiation.md",
-    "notes/Case Study - Counting Change.md",
-    "notes/Recursion and Iteration.md",
-    "index-sicp.md",
-    "book/Index of book.md",
-    "book/exercises/index-exercises.md",
-    "book/exercises/exercises.md"
+    "book/exercises/ex-1.17.md",
+    "book/exercises/ex-1.18.md",
+    "book/exercises/ex-1.19.md",
+    "book/exercises/index-exercises.md"
   ]
 }
