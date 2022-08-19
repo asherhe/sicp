@@ -1,8 +1,14 @@
-(define (expt b n)
-  (expt-iter b n 1))
+; Assumed to be defined
+(define (double x) (+ x x))
+(define (halve x) (/ x 2))
 
-(define (expt-iter b n a)
+(define (* a b)
+  (if (> b a)
+    (*-iter b a 0) ; reduce iteration count
+    (*-iter a b 0)))
+
+(define (*-iter a b sum)
   (cond
-    ((= n 0) a)
-    ((even? n) (expt-iter (square b) (/ n 2) a))
-    (else (expt-iter b (- n 1) (* a b)))))
+    ((<= b 0) sum)
+    ((even? b) (*-iter (double a) (halve b) sum))
+    (else (*-iter a (- b 1) (+ sum a)))))
