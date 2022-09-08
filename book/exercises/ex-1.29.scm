@@ -13,7 +13,7 @@
                ((odd? i) 4)
                (else 2))
          (f (+ a (* i h)))))
-    (/ (* h (sum simpson-term 0 1+ n)) 3)))
+    (/ (* h (sum simpson-term 0 inc n)) 3)))
 
 (integrate cube 0. 1. 100)
 (integrate cube 0. 1. 1000)

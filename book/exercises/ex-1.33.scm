@@ -37,10 +37,10 @@
   (miller-rabin-prime? n 10000)) ; the miller-rabin test is fast enough for us to be able to test a lot of numbers. however, adjust as you wish
 
 (define (sum-prime-squares a b)
-  (filtered-accumulate + 0 prime? square a 1+ b))
+  (filtered-accumulate + 0 prime? square a inc b))
 
 ;;;;;;;; PRODUCT OF ALL RELATIVELY PRIME NUMBERS ;;;;;;;;
 (define (rel-prime? a b)
   (= (gcd a b) 1))
 (define (prod-rel-prime n)
-  (filtered-accumulate * 1 (lambda (i) (rel-prime? i n)) (lambda (x) x) 1 1+ (- n 1)))
+  (filtered-accumulate * 1 (lambda (i) (rel-prime? i n)) (lambda (x) x) 1 inc (- n 1)))

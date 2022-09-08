@@ -6,7 +6,7 @@
 
 (define (factorial n)
   (define (identity x) x)
-  (product identity 1 1+ n))
+  (product identity 1 inc n))
 (factorial 6) ; 720
 
 ; pi   2*4 * 4*6 * 6*8 ...
@@ -16,7 +16,7 @@
   (define (approximation-term n)
     (/ (* 2 (+ (floor (/ n 2)) 1))
        (+ (* 2 (floor (/ (+ n 1) 2))) 1)))
-  (* 4 (product approximation-term 1. 1+ n)))
+  (* 4 (product approximation-term 1. inc n)))
 (pi-approximation 10)
 (pi-approximation 100)
 (pi-approximation 1000)

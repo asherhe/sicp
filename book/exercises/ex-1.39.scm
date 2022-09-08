@@ -1,0 +1,13 @@
+(define (cont-frac n d k)
+  (define (iter i)
+    (if (= i k)
+      (/ (n i) (d i))
+      (/ (n i) (+ (d i)
+                  (iter (inc i))))))
+  (iter 1))
+
+; only works in (-pi/2, pi/2)
+(define (tan-cf x k)
+  (- (cont-frac (lambda (i) (- (expt x i)))
+                (lambda (i) (- (* 2 i) 1.0))
+                k)))
